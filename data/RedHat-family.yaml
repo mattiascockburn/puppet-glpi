@@ -1,3 +1,18 @@
 ---
 glpi::repos::scl_collections:
-  - rh-php72
+  - rh-php71
+glpi::install::php_version: rh-php71
+glpi::install::packages:
+  - rh-php71-php-gd
+  - rh-php71-php-xmlrpc
+  - rh-php71-php-ldap
+  - rh-php71-php-xml
+  - rh-php71-php-pear
+  - rh-php71-php-pecl-apcu
+  - rh-php71-php-pecl-apcu-devel
+  - rh-php71-php-mysqlnd
+  - rh-php71-php-opcache
+  - rh-php71-php-pdo
+  - rh-php71-php-fpm
+  - sclo-php71-php-imap
+  - sclo-php71-php-mcrypt

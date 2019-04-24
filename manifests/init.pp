@@ -6,11 +6,10 @@
 #   include glpi
 class glpi(
   Boolean $manage_database,
-  Boolean $manage_packages,
   Boolean $manage_repos,
 ) {
   if $manage_repos {
     contain glpi::repos
   }
-
+  contain glpi::install
 }
