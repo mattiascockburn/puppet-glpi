@@ -19,7 +19,7 @@ class glpi::config (
     user     => $glpi::db_user,
     password => $glpi::db_password,
     host     => $glpi::db_host,
-    grant    => ['*'],
+    grant    => ['ALL'],
     }
   }
 }
