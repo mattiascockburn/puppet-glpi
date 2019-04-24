@@ -1,7 +1,27 @@
 ---
 glpi::manage_database: true
 glpi::manage_repos: true
-glpi::install::manage_packages: true
-glpi::install::manage_php: true
-glpi::repos::enable_epel: true
-glpi::repos::enable_scl: true
+glpi::manage_packages: true
+glpi::manage_php: true
+glpi::owner: glpi
+glpi::group: glpi
+glpi::version: 9.4.2
+glpi::archive_name: "glpi-%{lookup('glpi::version')}.tgz"
+glpi::archive_dest: "%{lookup('glpi::basedir')}/glpi-%{lookup('glpi::version')}"
+glpi::sha1sum: '9e9802689d054f3f310a22a0e8fde70727790b54'
+glpi::url: "https://github.com/glpi-project/glpi/releases/download/%{lookup('glpi::version')}/glpi-%{lookup('glpi::version')}.tgz"
+glpi::db_name: 'glpi'
+glpi::db_host: 'localhost'
+glpi::db_user: 'glpi'
+glpi::db_password: 'glpi'
+glpi::php_settings:
+  'PHP/max_execution_time': '600'
+  'PHP/memory_limit': '64M'
+  'PHP/post_max_size': '32M'
+  'PHP/file_uploads': 'on'
+  'PHP/register_globals': 'off'
+  'PHP/magic_quotes_sybase': 'off'
+  'PHP/session.auto_start': 'off'
+  'PHP/session.use_trans_sid': '0'
+  'PHP/upload_max_filesize': '32M'
+  'Date/date.timezone': 'UTC'
