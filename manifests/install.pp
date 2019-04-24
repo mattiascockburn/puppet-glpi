@@ -17,7 +17,7 @@ class glpi::install (
   -> class { '::php':
     manage_repos => false
   }
-  package{$packages:
-    ensure => present,
+  $packages.each |$pkg| {
+    ensure_packages($packages)
   }
 }
