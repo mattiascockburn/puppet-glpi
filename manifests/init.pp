@@ -23,4 +23,5 @@ class glpi(
     contain glpi::repos
   }
   contain glpi::install
+  contain glpi::config
 }
