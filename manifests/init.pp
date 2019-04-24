@@ -6,6 +6,7 @@
 #   include glpi
 class glpi(
   Boolean $manage_repos,
+  Boolean $manage_database,
   Boolean $manage_packages,
   Boolean $manage_php,
   Array[String] $packages,
