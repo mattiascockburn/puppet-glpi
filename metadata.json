@@ -6,7 +6,8 @@
   "license": "MIT",
   "source": "",
   "dependencies": [
-
+    { "name":"puppetlabs/stdlib","version_requirement":">=5.0.0" },
+    { "name":"bodgit/scl","version_requirement":">=1.0.1" }
   ],
   "operatingsystem_support": [
     {
