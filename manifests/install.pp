@@ -15,6 +15,8 @@ class glpi::install (
     class { '::php':
       manage_repos => false,
       settings     => $glpi::php_settings,
+      fpm_user     => $glpi::owner,
+      fpm_group    => $glpi::group,
     }
   }
 
