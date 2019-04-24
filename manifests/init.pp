@@ -18,7 +18,11 @@ class glpi(
   String $sha1sum,
   String $archive_name,
   String $archive_dest,
-  String $url
+  String $url,
+  String $db_user,
+  String $db_password,
+  String $db_host,
+  String $db_name,
 ) {
   if $manage_repos {
     contain glpi::repos
