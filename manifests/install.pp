@@ -24,16 +24,21 @@ class glpi::install (
     ensure_packages($glpi::packages)
   }
 
+  exec{'glpi_create_basedir':
+    command => "mkdir -p ${glpi::basedir}",
+    path    => ['/bin','/usr/bin'],
+    creates => $glpi::basedir,
+  } ->
   file { $glpi::archive_dest:
-    ensure => directory,
-    owner  => $glpi::owner,
-    group  => $glpi::group,
-    mode   => '0755',
+    ensure  => directory,
+    owner   => $glpi::owner,
+    group   => $glpi::group,
+    mode    => '0755',
   }
 
   file { "${glpi::basedir}/current":
-  ensure => 'link',
-  target => "$glpi::archive_dest"
+  ensure  => 'link',
+  target  => "$glpi::archive_dest"
   }
 
   archive { $glpi::archive_name:
