@@ -3,6 +3,8 @@ glpi::manage_database: true
 glpi::manage_repos: true
 glpi::manage_packages: true
 glpi::manage_php: true
+glpi::manage_selinux: true
+glpi::use_ldap: true
 glpi::owner: glpi
 glpi::group: glpi
 glpi::version: 9.4.2

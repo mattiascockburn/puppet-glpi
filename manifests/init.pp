@@ -9,6 +9,8 @@ class glpi(
   Boolean $manage_database,
   Boolean $manage_packages,
   Boolean $manage_php,
+  Boolean $manage_selinux,
+  Boolean $use_ldap,
   Array[String] $packages,
   String $php_version,
   Hash $php_settings,
