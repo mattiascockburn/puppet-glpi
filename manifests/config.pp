@@ -32,7 +32,6 @@ class glpi::config (
       password        => $glpi::db_password,
       host            => $glpi::db_host,
       grant           => ['ALL'],
-      mysql_exec_path =>
     }
   }
 }
