@@ -10,7 +10,7 @@ class glpi::plugin::fusioninventory (
   $archive       = "fusioninventory-${version}.tar.bz2",
   $checksum      = '12bb42d349393c7d3ede72a9f98672d0ecbcc58a87ebfad8f15a2ecefa455e5e',
   $checksum_type = 'sha256',
-  $archive_dest  = "${glpi::archive_dest}/files/_plugins/",
+  $archive_dest  = "${glpi::archive_dest}/plugins/",
 ){
   archive { $archive:
     path            => "/var/tmp/${archive}",
