@@ -10,7 +10,7 @@ glpi::group: glpi
 glpi::version: 9.4.3
 glpi::archive_name: "glpi-%{lookup('glpi::version')}.tgz"
 glpi::archive_dest: "%{lookup('glpi::basedir')}/glpi-%{lookup('glpi::version')}"
-glpi::sha1sum: '9e9802689d054f3f310a22a0e8fde70727790b54'
+glpi::sha1sum: '594121e47057d408393b6fbb101bafa6fb95941e'
 glpi::url: "https://github.com/glpi-project/glpi/releases/download/%{lookup('glpi::version')}/glpi-%{lookup('glpi::version')}.tgz"
 glpi::db_name: 'glpi'
 glpi::db_host: 'localhost'
