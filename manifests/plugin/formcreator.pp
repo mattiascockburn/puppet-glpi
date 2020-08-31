@@ -1,15 +1,15 @@
-# A description of what this class does
+# Install the formcreator plugin
 #
-# @summary A short summary of the purpose of this class
+# @summary Install the formcreator plugin
 #
 # @example
 #   include glpi::plugin::formcreator
 class glpi::plugin::formcreator (
   $manage_prereqs = true,
-  $version        = '2.8.5',
+  $version        = '2.10.1',
   $url            = "https://github.com/pluginsGLPI/formcreator/releases/download/v${version}/glpi-formcreator-${version}.tar.bz2",
   $archive        = "formcreator-${version}.tar.bz2",
-  $checksum       = '7ac2c8449c016ca67f35f4b11c88dfe929a93bc483b1fc534c1cedbd47a494f7',
+  $checksum       = '0f8a765180d143fdf267d60843d9385596dae7dbc4dcbadf1fd7ed9cd9136cbb',
   $checksum_type  = 'sha256',
   $archive_dest   = "${glpi::archive_dest}/plugins/",
 ){

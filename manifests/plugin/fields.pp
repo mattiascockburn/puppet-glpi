@@ -1,15 +1,15 @@
-# A description of what this class does
+# Install the field plugin
 #
-# @summary A short summary of the purpose of this class
+# @summary Install the field plugin
 #
 # @example
 #   include glpi::plugin::fields
 class glpi::plugin::fields (
   $manage_prereqs = true,
-  $version        = '1.10.2',
+  $version        = '1.11.0',
   $url            = "https://github.com/pluginsGLPI/fields/releases/download/${version}/glpi-fields-${version}.tar.bz2",
   $archive        = "fields-${version}.tar.bz2",
-  $checksum       = '2c4887e31d839e3e3ef378ab31a03cb962b37d809ad45b78ffcc3a084e86da77',
+  $checksum       = 'dca1df6a01aff55240f3316d97198b5d8f7414aa6b3e9e72d146a31a8c435fe6',
   $checksum_type  = 'sha256',
   $archive_dest   = "${glpi::archive_dest}/plugins/",
 ){

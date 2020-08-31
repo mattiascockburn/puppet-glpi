@@ -1,15 +1,15 @@
-# A description of what this class does
+# Install the fusion inventory plugin
 #
-# @summary A short summary of the purpose of this class
+# @summary Install the fusion inventory plugin
 #
 # @example
 #   include glpi::plugin::fusioninventory
 class glpi::plugin::fusioninventory (
   $manage_prereqs = true,
-  $version        = '9.4+1.1',
+  $version        = '9.5.0+1.0',
   $url            = "https://github.com/fusioninventory/fusioninventory-for-glpi/releases/download/glpi${version}/fusioninventory-${version}.tar.bz2",
   $archive        = "fusioninventory-${version}.tar.bz2",
-  $checksum       = '12bb42d349393c7d3ede72a9f98672d0ecbcc58a87ebfad8f15a2ecefa455e5e',
+  $checksum       = '11e41b2e6ab32172fd9851ead8c2e3439f9968938e054cd8f078694c9f03c461',
   $checksum_type  = 'sha256',
   $archive_dest   = "${glpi::archive_dest}/plugins/",
 ){

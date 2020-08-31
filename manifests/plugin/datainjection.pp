@@ -1,15 +1,15 @@
-# A description of what this class does
+# Install the datainjection plugin
 #
-# @summary A short summary of the purpose of this class
+# @summary Install the datainjection plugin
 #
 # @example
 #   include glpi::plugin::datainjection
 class glpi::plugin::datainjection (
   $manage_prereqs = true,
-  $version        = '2.7.0',
+  $version        = '2.8.0',
   $url            = "https://github.com/pluginsGLPI/datainjection/releases/download/${version}/glpi-datainjection-${version}.tar.bz2",
   $archive        = "datainjection-${version}.tar.bz2",
-  $checksum       = '2935dd594c4370ca414731e883f3ca396ac7bd753582f847ae947a93ec7e4896',
+  $checksum       = 'f6d7365024328b50b8afe2833e87aaeccc518a718278e8b277e89cad124a2784',
   $checksum_type  = 'sha256',
   $archive_dest   = "${glpi::archive_dest}/plugins/",
 ){
