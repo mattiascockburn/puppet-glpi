@@ -18,6 +18,5 @@ glpi::packages:
   - "%{lookup('glpi::php_version')}-php-fpm"
   - "%{lookup('glpi::php_version')}-php-mbstring"
   - "%{lookup('glpi::php_version')}-php-intl"
-  - "sclo-php71-php-imap"
-  - "sclo-php71-php-mcrypt"
+  - "sclo-php73-php-imap"
 glpi::basedir: '/var/www/glpi'
