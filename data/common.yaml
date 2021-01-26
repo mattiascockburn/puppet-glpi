@@ -7,10 +7,10 @@ glpi::manage_selinux: true
 glpi::use_ldap: true
 glpi::owner: glpi
 glpi::group: glpi
-glpi::version: 9.5.1
+glpi::version: 9.5.3
 glpi::archive_name: "glpi-%{lookup('glpi::version')}.tgz"
 glpi::archive_dest: "%{lookup('glpi::basedir')}/glpi-%{lookup('glpi::version')}"
-glpi::sha1sum: '23ceae94dffd5d60ab6fabfcc1517d9ca84bf64d'
+glpi::sha1sum: '9f76a0089b7f2391618bc67fbfe613c34f2a80e6'
 glpi::url: "https://github.com/glpi-project/glpi/releases/download/%{lookup('glpi::version')}/glpi-%{lookup('glpi::version')}.tgz"
 glpi::db_name: 'glpi'
 glpi::db_host: 'localhost'
