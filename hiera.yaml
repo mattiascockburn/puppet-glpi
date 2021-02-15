@@ -6,6 +6,10 @@ defaults:  # Used for any hierarchy level that omits these keys.
   data_hash: yaml_data  # Use the built-in YAML backend.
 
 hierarchy:
+  - name: 'OS version specific settings'
+    path: '%{facts.os.name}-%{facts.os.release.major}.yaml'
+  - name: 'OS specific settings'
+    path: '%{facts.os.name}.yaml'
   - name: 'Operating System Family'
     path: '%{facts.os.family}-family.yaml'
   - name: 'common'

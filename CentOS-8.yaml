@@ -1,0 +1,20 @@
+---
+glpi::repos::enable_epel: false
+glpi::repos::enable_scl: false
+glpi::php_version: php74
+glpi::packages:
+  - "%{lookup('glpi::php_version')}-php-gd"
+  - "%{lookup('glpi::php_version')}-php-xmlrpc"
+  - "%{lookup('glpi::php_version')}-php-ldap"
+  - "%{lookup('glpi::php_version')}-php-xml"
+  - "%{lookup('glpi::php_version')}-php-pear"
+  - "%{lookup('glpi::php_version')}-php-pecl-apcu"
+  - "%{lookup('glpi::php_version')}-php-pecl-apcu-devel"
+  - "%{lookup('glpi::php_version')}-php-mysqlnd"
+  - "%{lookup('glpi::php_version')}-php-opcache"
+  - "%{lookup('glpi::php_version')}-php-pdo"
+  - "%{lookup('glpi::php_version')}-php-fpm"
+  - "%{lookup('glpi::php_version')}-php-mbstring"
+  - "%{lookup('glpi::php_version')}-php-intl"
+  - "%{lookup('glpi::php_version')}-php-imap"
+glpi::basedir: '/var/www/glpi'
