@@ -6,7 +6,7 @@
 #   include glpi::plugin::fusioninventory
 class glpi::plugin::fusioninventory (
   $manage_prereqs = true,
-  $version        = '9.5.0+1.0',
+  $version        = '9.5+3.0',
   $url            = "https://github.com/fusioninventory/fusioninventory-for-glpi/releases/download/glpi${version}/fusioninventory-${version}.tar.bz2",
   $archive        = "fusioninventory-${version}.tar.bz2",
   $checksum       = '11e41b2e6ab32172fd9851ead8c2e3439f9968938e054cd8f078694c9f03c461',

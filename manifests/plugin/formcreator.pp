@@ -6,10 +6,10 @@
 #   include glpi::plugin::formcreator
 class glpi::plugin::formcreator (
   $manage_prereqs = true,
-  $version        = '2.10.1',
+  $version        = '2.11.3',
   $url            = "https://github.com/pluginsGLPI/formcreator/releases/download/v${version}/glpi-formcreator-${version}.tar.bz2",
   $archive        = "formcreator-${version}.tar.bz2",
-  $checksum       = '0f8a765180d143fdf267d60843d9385596dae7dbc4dcbadf1fd7ed9cd9136cbb',
+  $checksum       = '70240bbd79622272f8a470c3a4ff90a2326414cf130ae98f392624ba75456474',
   $checksum_type  = 'sha256',
   $archive_dest   = "${glpi::archive_dest}/plugins/",
 ){

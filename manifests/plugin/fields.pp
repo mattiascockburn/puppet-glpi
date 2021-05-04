@@ -6,10 +6,10 @@
 #   include glpi::plugin::fields
 class glpi::plugin::fields (
   $manage_prereqs = true,
-  $version        = '1.11.0',
+  $version        = '1.12.5',
   $url            = "https://github.com/pluginsGLPI/fields/releases/download/${version}/glpi-fields-${version}.tar.bz2",
   $archive        = "fields-${version}.tar.bz2",
-  $checksum       = 'dca1df6a01aff55240f3316d97198b5d8f7414aa6b3e9e72d146a31a8c435fe6',
+  $checksum       = '60f47278f2e59dbce743468ad96f1f7cde44bb9e9f922a64ae66398e15f8b046',
   $checksum_type  = 'sha256',
   $archive_dest   = "${glpi::archive_dest}/plugins/",
 ){

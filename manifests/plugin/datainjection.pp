@@ -6,10 +6,10 @@
 #   include glpi::plugin::datainjection
 class glpi::plugin::datainjection (
   $manage_prereqs = true,
-  $version        = '2.8.0',
+  $version        = '2.9.0',
   $url            = "https://github.com/pluginsGLPI/datainjection/releases/download/${version}/glpi-datainjection-${version}.tar.bz2",
   $archive        = "datainjection-${version}.tar.bz2",
-  $checksum       = 'f6d7365024328b50b8afe2833e87aaeccc518a718278e8b277e89cad124a2784',
+  $checksum       = '901a5b3361d920300ab8c413dcf3394f6b822da2a2f0244445f80c66e16f9528',
   $checksum_type  = 'sha256',
   $archive_dest   = "${glpi::archive_dest}/plugins/",
 ){
